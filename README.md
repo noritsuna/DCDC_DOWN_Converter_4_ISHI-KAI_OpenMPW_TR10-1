@@ -65,3 +65,21 @@ ISHI-KAI_Multiple_Projects_OpenMPW_TR10-1 向けの降圧型DCDCコンバータ�
 ### klayout
 - ![klayout_dcdc_down](images/klayout_dcdc_down.png)
 
+
+# WSL Image
+上記の回路図やシミュレーション、レイアウト、DRC、LVSを実行するための環境をセットアップしたWSLイメージを用意しています。
+
+- [WSL Image](https://www.noritsuna.jp/download/ubuntu2204_TR10-1.tar.xz)
+    - ID: ishikai
+    - Pass: ishikai
+
+## Installing WSL Images
+`wsl --import-in-place ubuntu2204_TR10-1 .\ubuntu2204_TR10-1\ext4.vhdx`
+
+起動には"ubuntu2204_TR10-1.lnk"をご利用ください。  
+
+
+## Deleting WSL Images
+イメージも削除されるので注意してください。    
+
+`wsl --unregister ubuntu2204_TR10-1`
